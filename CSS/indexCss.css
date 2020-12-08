@@ -1,0 +1,19 @@
+.slider
+{
+	width: 150px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+.fenetre
+{
+	background-color: #DDDCDC;
+	width: 340px;
+	height: 510px;
+	margin: 0 auto;
+}
+
+.store
+{
+	margin-top: -150%;
+}

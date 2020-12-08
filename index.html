@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Meozzi Théo - Store </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="CSS/indexCss.css">
+	</head>
+
+	<body>
+		<div class="fenetre">
+			<img src="Images/store_ouvert.png" class="store" id="image" width="340" height="510">
+		</div>
+
+		<div class="slider">
+	    	<input type="range" name="curseur" id="curseur" min="0" max="100" value="0"/>
+	  	</div>
+
+		<script type="text/javascript">
+
+			document.getElementById("curseur").oninput = function()
+			{
+				for(let i=0; i<100; i++)
+			  	{
+			  		if(document.getElementById("curseur").value==i)
+					{
+						document.getElementById("image").style.marginBottom="-"+i*1.5+"%";
+					}
+			  	}
+
+			  	if(document.getElementById("curseur").value==100)
+			  	{
+			  		document.getElementById("image").src="Images/store_ferme.png";
+			  	}
+
+			  	else
+			  	{
+			  		document.getElementById("image").src="Images/store_ouvert.png";
+			  	}
+			}
+
+		</script>
+	</body>
+</html>
